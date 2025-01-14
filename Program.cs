@@ -1,7 +1,17 @@
+using LearnRazor.Builder;
+using LearnRazor.Builder.Seed;
+using LearnRazor.Builder.Services;
+using LearnRazor.InternalMigration;
+
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+var sqliteConnectionString = configuration.GetConnectionString("Sqlite");
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddServiceCollection();
+builder.Services.AddConfigurationProvider(configuration);
+builder.Services.AddFluentMigratorProvider(sqliteConnectionString!);
+builder.Services.AddMvc();
 builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
@@ -21,10 +31,15 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapDefaultControllerRoute();
+
 app.UseEndpoints(endpoint =>
 {
     endpoint.MapRazorPages();
     endpoint.MapBlazorHub();
 });
+
+app.UseFluentMigrator();
+await app.AddProducts();
 
 app.Run();

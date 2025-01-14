@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace LearnRazor.Model;
+namespace LearnRazor.Models;
 
 public class Book
 {

@@ -10,21 +10,21 @@ namespace LearnRazor.InternalMigration;
 public class MainMigration : Migration
 {
     IEnumerable<Type> listMigration = Assembly
-        .GetAssembly(typeof(MigrationBase))
+        .GetAssembly(typeof(IMigrationBase))
         .GetTypes()
         .Where(type =>
-            type.IsClass && !type.IsAbstract && typeof(MigrationBase).IsAssignableFrom(type)
+            type.IsClass && !type.IsAbstract && typeof(IMigrationBase).IsAssignableFrom(type)
         );
 
-    List<MigrationBase> GetMigrationBaseInheritedClass()
+    List<IMigrationBase> GetMigrationBaseInheritedClass()
     {
-        List<MigrationBase> list = new List<MigrationBase>();
+        List<IMigrationBase> list = new List<IMigrationBase>();
 
         foreach (var item in listMigration)
         {
             // if (System.Attribute.GetCustomAttributes(item).Length == 0)
             // {
-            list.Add((MigrationBase)Activator.CreateInstance(item));
+            list.Add((IMigrationBase)Activator.CreateInstance(item));
             // }
         }
         return list;

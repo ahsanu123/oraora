@@ -1,26 +1,26 @@
 using FluentMigrator;
-using Microsoft.AspNetCore.Identity;
+using LearnRazor.Models;
 
 namespace LearnRazor.InternalMigration;
 
-public class ModelMigrationList : MigrationBase
+public class ModelMigrationList : IMigrationBase
 {
-    private List<Type> listModel = new List<Type> { };
+    private readonly List<Type> listModel = new List<Type> { typeof(Product) };
 
     public static List<string> listExcludedType = new List<string> { nameof(System.Collections) };
 
     public void MigrationDown(Migration migration)
     {
-        this.listModel.ForEach((type) => migration.DeleteTableIfExists(type));
+        listModel.ForEach((type) => migration.DeleteTableIfExists(type));
     }
 
     public void MigrationUp(Migration migration)
     {
-        this.listModel.ForEach((type) => migration.ConvertModelToMigration(type, listExcludedType));
+        listModel.ForEach((type) => migration.ConvertModelToMigration(type, listExcludedType));
     }
 
     public void GenerateForeignKey(Migration migration)
     {
-        this.listModel.ForEach((type) => migration.GenerateForeignKey(type));
+        listModel.ForEach((type) => migration.GenerateForeignKey(type));
     }
 }

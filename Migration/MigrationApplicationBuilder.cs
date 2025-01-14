@@ -5,7 +5,7 @@ namespace LearnRazor.InternalMigration;
 
 public static class MigrationApplicationBuilder
 {
-    public const int MIGRATION_VERSION = 50;
+    public const int MIGRATION_VERSION = 2;
 
     public const string MIGRATION_DESCRIPTION =
         $"Learning Authentication and Authorization From stratch";
@@ -20,6 +20,7 @@ public static class MigrationApplicationBuilder
         var versionLoader = scope.ServiceProvider.GetService<IVersionLoader>();
 
         runner.ListMigrations();
+        ArgumentNullException.ThrowIfNull(runner);
 
         if (MigrationApplicationBuilder.MIGRATION_VERSION > versionLoader.VersionInfo.Latest())
         {

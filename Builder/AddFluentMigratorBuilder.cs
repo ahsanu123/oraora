@@ -2,7 +2,7 @@ using System.Reflection;
 using FluentMigrator.Runner;
 using LearnRazor.Extension;
 
-namespace LearnRazor.Services;
+namespace LearnRazor.Builder;
 
 public static class BuilderAddFluentMigratorProvider
 {

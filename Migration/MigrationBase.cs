@@ -2,7 +2,7 @@ using FluentMigrator;
 
 namespace LearnRazor.InternalMigration;
 
-public interface MigrationBase
+public interface IMigrationBase
 {
     public abstract void MigrationUp(Migration migration);
     public abstract void MigrationDown(Migration migration);
