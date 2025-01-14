@@ -3,11 +3,31 @@
 @{
   ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
-<p>Use this page to detail your site's privacy policy.</p>
+<h1> @ViewData["Title"]</h1>
+<p>
+  The purpose of this policy is to outline the Wayne State University attendance standards.
+  Each employee is an important contributor to the University's mission and each employee is needed at work to assist in
+  accomplishment of the university’s goals and objectives. Absenteeism and tardiness negatively impact services provided 
+  to students and the University community. Absenteeism also lowers the morale of other employees who have to perform 
+  the work of the absent employee.
+  To ensure effective and efficient operations of the University and provide the best possible work environment to
+  employees, the University expects employees to adhere to the attendance standards as outlined in this policy.
+  Use this page to detail your site's privacy policy.
+</p>
+
+<p>
+  We provide personal information to our affiliates and other trusted businesses or persons to process it for us, based on our instructions and in compliance with our Privacy Policy and any other appropriate confidentiality and security measures. For example, we use service providers to help operate our data centers, deliver our products and services, improve our internal business processes, and offer additional support to customers and users. We also use service providers to help review YouTube video content for public safety and analyze and listen to samples of saved user audio to help improve Google’s audio recognition technologies.
+</p>
+<p>
+  We may share non-personally identifiable information publicly and with our partners — like publishers, advertisers, developers, or rights holders. For example, we share information publicly to show trends about the general use of our services. We also allow specific partners to collect information from your browser or device for advertising and measurement purposes using their own cookies or similar technologies.
+
+If Google is involved in a merger, acquisition, or sale of assets, we’ll continue to ensure the confidentiality of your personal information and give affected users notice before personal information is transferred or becomes subject to a different privacy policy.
+</p>
 
 <div>
   <p>
     @ViewData["Title"]
   </p>
 </div>
+ 
+<component>@(await Html.RenderComponentAsync<Counter>(RenderMode.Server))</component>
