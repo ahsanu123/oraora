@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\oraora\LearnRazor.csproj" />
+    <ProjectReference Include="..\oraora\oraora.csproj" />
   </ItemGroup>
 
 </Project>
