@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace LearnRazor.JsonSerializerConstant;
+namespace Oraora.Constant;
 
 public static class JsonConstant
 {

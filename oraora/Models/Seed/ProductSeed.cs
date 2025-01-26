@@ -1,4 +1,4 @@
-namespace LearnRazor.Models.Seed;
+namespace Oraora.Models.Seed;
 
 public static class ProductSeeds
 {

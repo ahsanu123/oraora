@@ -1,7 +1,7 @@
 using System.Reflection;
 using FluentMigrator;
 
-namespace LearnRazor.InternalMigration;
+namespace Oraora.InternalMigration;
 
 [Migration(
     MigrationApplicationBuilder.MIGRATION_VERSION,

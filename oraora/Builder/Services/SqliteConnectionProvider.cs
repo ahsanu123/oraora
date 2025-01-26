@@ -1,8 +1,8 @@
-using LearnRazor.Models.Binding;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Options;
+using Oraora.Models.Binding;
 
-namespace LearnRazor.Builder.Services;
+namespace Oraora.Builder.Services;
 
 public interface ISqliteConnectionProvider
 {

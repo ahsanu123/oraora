@@ -1,6 +1,6 @@
-using LearnRazor.Repository;
+using Oraora.Repository;
 
-namespace LearnRazor.Builder.Services;
+namespace Oraora.Builder.Services;
 
 public static class ServicesCollection
 {

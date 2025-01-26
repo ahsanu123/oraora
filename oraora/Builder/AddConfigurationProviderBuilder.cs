@@ -1,6 +1,6 @@
-using LearnRazor.Models.Binding;
+using Oraora.Models.Binding;
 
-namespace LearnRazor.Builder;
+namespace Oraora.Builder;
 
 public static class AddConfigurationProviderBuilder
 {

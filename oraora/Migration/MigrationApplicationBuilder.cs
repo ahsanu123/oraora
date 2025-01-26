@@ -1,7 +1,7 @@
 using FluentMigrator;
 using FluentMigrator.Runner;
 
-namespace LearnRazor.InternalMigration;
+namespace Oraora.InternalMigration;
 
 public static class MigrationApplicationBuilder
 {

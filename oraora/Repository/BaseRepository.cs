@@ -1,7 +1,7 @@
-using LearnRazor.Builder.Services;
 using Microsoft.Data.Sqlite;
+using Oraora.Builder.Services;
 
-namespace LearnRazor.Repository;
+namespace Oraora.Repository;
 
 public abstract class BaseRepository
 {

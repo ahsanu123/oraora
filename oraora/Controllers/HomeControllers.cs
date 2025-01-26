@@ -1,12 +1,12 @@
-using LearnRazor.Models.ViewModels;
-using LearnRazor.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Oraora.Models.ViewModels;
+using Oraora.Repository;
 
-namespace LearnRazor.Controllers;
+namespace Oraora.Controllers;
 
 public class HomeController : Controller
 {
-    private IProductRepository _productRepo;
+    private readonly IProductRepository _productRepo;
 
     public HomeController(IProductRepository productRepository)
     {

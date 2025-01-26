@@ -1,7 +1,7 @@
-using LearnRazor.Models.Seed;
-using LearnRazor.Repository;
+using Oraora.Models.Seed;
+using Oraora.Repository;
 
-namespace LearnRazor.Builder.Seed;
+namespace Oraora.Builder.Seed;
 
 public static class ProductSeeder
 {

@@ -1,11 +1,9 @@
-using System.Diagnostics;
-using Dapper;
-using LearnRazor.Builder.Services;
-using LearnRazor.Extension;
-using LearnRazor.Models;
+using Oraora.Builder.Services;
+using Oraora.Extension;
+using Oraora.Models;
 using SqlKata;
 
-namespace LearnRazor.Repository;
+namespace Oraora.Repository;
 
 public interface IProductRepository
 {

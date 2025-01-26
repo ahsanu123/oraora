@@ -8,7 +8,7 @@ using FluentMigrator.Runner.Processors;
 using FluentMigrator.Runner.Processors.SQLite;
 using Microsoft.Extensions.Options;
 
-namespace LearnRazor.Extension;
+namespace Oraora.Extension;
 
 public static class FluentMigratorExtension
 {

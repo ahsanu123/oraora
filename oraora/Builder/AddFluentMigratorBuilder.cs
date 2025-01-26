@@ -1,8 +1,8 @@
 using System.Reflection;
 using FluentMigrator.Runner;
-using LearnRazor.Extension;
+using Oraora.Extension;
 
-namespace LearnRazor.Builder;
+namespace Oraora.Builder;
 
 public static class BuilderAddFluentMigratorProvider
 {

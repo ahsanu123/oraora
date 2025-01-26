@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace LearnRazor.Extension;
+namespace Oraora.Extension;
 
 public static class UtilityExtension
 {

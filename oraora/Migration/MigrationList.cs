@@ -1,7 +1,7 @@
 using FluentMigrator;
-using LearnRazor.Models;
+using Oraora.Models;
 
-namespace LearnRazor.InternalMigration;
+namespace Oraora.InternalMigration;
 
 public class ModelMigrationList : IMigrationBase
 {

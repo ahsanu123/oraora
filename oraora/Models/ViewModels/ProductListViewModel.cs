@@ -1,4 +1,4 @@
-namespace LearnRazor.Models.ViewModels;
+namespace Oraora.Models.ViewModels;
 
 public class ProductListViewModel
 {

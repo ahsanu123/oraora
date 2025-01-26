@@ -2,12 +2,12 @@ using System.Data;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using Dapper;
-using LearnRazor.InternalMigration;
-using LearnRazor.JsonSerializerConstant;
+using Oraora.Constant;
+using Oraora.InternalMigration;
 using SqlKata;
 using SqlKata.Compilers;
 
-namespace LearnRazor.Extension;
+namespace Oraora.Extension;
 
 public class DapperSqlKataExtensionHelper
 {

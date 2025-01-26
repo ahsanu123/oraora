@@ -1,7 +1,7 @@
-using LearnRazor.Builder;
-using LearnRazor.Builder.Seed;
-using LearnRazor.Builder.Services;
-using LearnRazor.InternalMigration;
+using Oraora.Builder;
+using Oraora.Builder.Seed;
+using Oraora.Builder.Services;
+using Oraora.InternalMigration;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;

@@ -1,6 +1,6 @@
 using FluentMigrator;
 
-namespace LearnRazor.InternalMigration;
+namespace Oraora.InternalMigration;
 
 public interface IMigrationBase
 {

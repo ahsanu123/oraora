@@ -1,9 +1,9 @@
-namespace LearnRazor.InternalMigration;
-
 using System.Data;
 using System.Text.RegularExpressions;
 using FluentMigrator;
 using FluentMigrator.Builders.Create.Table;
+
+namespace Oraora.InternalMigration;
 
 public static class ModelToMigration
 {

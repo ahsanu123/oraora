@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace LearnRazor.Pages;
+namespace Oraora.Pages;
 
 public class PrivacyModel : PageModel
 {

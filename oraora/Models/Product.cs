@@ -1,4 +1,4 @@
-namespace LearnRazor.Models;
+namespace Oraora.Models;
 
 public class Product
 {

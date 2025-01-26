@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace LearnRazor.Models;
+namespace Oraora.Models;
 
 public class Book
 {

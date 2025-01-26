@@ -1,10 +1,10 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
-using LearnRazor.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Oraora.Models;
 
-namespace LearnRazor.Pages;
+namespace Oraora.Pages;
 
 public class IndexModel : PageModel
 {

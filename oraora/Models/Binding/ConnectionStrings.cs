@@ -1,4 +1,4 @@
-namespace LearnRazor.Models.Binding;
+namespace Oraora.Models.Binding;
 
 public class ConnectionStrings
 {
